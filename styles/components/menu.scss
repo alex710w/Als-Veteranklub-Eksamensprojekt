@@ -1,0 +1,78 @@
+@use '../core' as *; /* this enables the usage of all variables and mixins from the general folder */
+
+
+.menu {
+   
+    @media only screen and (max-width: 820px){
+        &__nav{
+            display: none;
+        }
+    }
+        
+    
+
+    
+    width: 100%;
+    display: flex;
+    
+    
+    &__list{
+        
+        margin: 34px;
+        display: flex;
+        gap: 5.8%;
+        
+        
+
+    }
+    &__item{
+     margin-top: 0px;
+    }
+
+    &__nav{
+        
+        
+        height: 90px;
+        background: transparent;
+        backdrop-filter: blur(24px);
+        --webkit-backdrop-filter: blur(30px);
+        background-color: rgba(172, 172, 172, 0.040);
+        margin-left: 40px;
+        width: 100%;
+        margin-top: 26px;
+        
+        
+    }
+    
+    
+    
+    &__link{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: $primary;
+        
+        font-family: "Meno Banner";
+        font-weight: 900;
+        font-size: 22px;
+        text-align: left;
+        color: #b3b3b3;
+        
+        
+    }
+
+
+} 
+
+body{
+    background-image:url(AlsScreeeen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+
+
+
